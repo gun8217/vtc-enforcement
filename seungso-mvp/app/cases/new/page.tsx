@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import NewCaseForm from "@/components/cases/NewCaseForm";
 
 export default function NewCasePage() {

@@ -1,6 +1,5 @@
 import "@/app/globals.scss";
-
-import Link from "next/link";
+import Header from "@/components/Header"; // Header 컴포넌트 임포트
 
 export default function RootLayout({
   children,
@@ -10,12 +9,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <header>
-          <nav>
-            <Link href="/">홈</Link>
-            <Link href="/service">서비스</Link>
-          </nav>
-        </header>
+        <Header /> {/* 클라이언트 상태를 관리하는 헤더 적용 */}
         {children}
       </body>
     </html>

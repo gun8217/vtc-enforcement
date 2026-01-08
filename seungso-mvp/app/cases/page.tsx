@@ -1,17 +1,21 @@
-import { createSupabaseServerClient } from "@/lib/supabase/server";
+"use client";
 
-export default async function CasesPage() {
-  const supabase = await createSupabaseServerClient();
+import { supabase } from "@/lib/supabase/client";
+import { useEffect, useState } from "react";
 
-  const { data: cases } = await supabase
-    .from("cases")
-    .select("*")
-    .order("created_at", { ascending: false });
+export default function CasesPage() {
+  const [email, setEmail] = useState<string | null>(null);
+
+  useEffect(() => {
+    supabase.auth.getUser().then(({ data }) => {
+      setEmail(data.user?.email ?? null);
+    });
+  }, []);
 
   return (
-    <div>
-      <h1>내 사건 목록</h1>
-      <pre>{JSON.stringify(cases, null, 2)}</pre>
+    <div style={{ padding: 40 }}>
+      <h1>Cases</h1>
+      <p>로그인 사용자: {email}</p>
     </div>
   );
 }

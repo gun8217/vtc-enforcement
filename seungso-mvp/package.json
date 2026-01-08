@@ -6,7 +6,9 @@
     "dev": "cmd /c \"start http://localhost:3000 && next dev\"",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "next": "16.1.1",
