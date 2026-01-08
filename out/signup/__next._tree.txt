@@ -1,0 +1,2 @@
+:HL["/vtc-enforcement/_next/static/chunks/605c01e171ae5019.css","style"]
+0:{"buildId":"23P7XiBZAo7U-0y1j8gLR","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"signup","paramType":null,"paramKey":"signup","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

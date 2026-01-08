@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[62755,["/vtc-enforcement/_next/static/chunks/1558dde26550a42e.js","/vtc-enforcement/_next/static/chunks/b5a306848f08f5f1.js","/vtc-enforcement/_next/static/chunks/42df24c579c17130.js","/vtc-enforcement/_next/static/chunks/5be1ae40f2f5948f.js"],"default"]
+3:I[37302,["/vtc-enforcement/_next/static/chunks/a0761738ac63cb99.js","/vtc-enforcement/_next/static/chunks/12c419e0a225595d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"23P7XiBZAo7U-0y1j8gLR","rsc":["$","$1","c",{"children":[["$","div",null,{"children":[["$","h1",null,{"children":"사건 등록"}],["$","$L2",null,{}]]}],[["$","script","script-0",{"src":"/vtc-enforcement/_next/static/chunks/5be1ae40f2f5948f.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
