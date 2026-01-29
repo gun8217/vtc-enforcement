@@ -1,16 +1,26 @@
 import "@/app/globals.scss";
-import Header from "@/components/Header"; // Header 컴포넌트 임포트
+import FontAwesomeConfig from "@/components/layout/FontAwesomeConfig";
+import Header from "@/components/layout/Header";
+import ThemeWrapper from "@/components/layout/ThemeWrapper";
+import { getMenuItems } from "@/lib/menu";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const menu = getMenuItems();
+
   return (
     <html lang="ko">
+      <head>
+        <FontAwesomeConfig />
+      </head>
       <body>
-        <Header /> {/* 클라이언트 상태를 관리하는 헤더 적용 */}
-        {children}
+        <ThemeWrapper>
+          <Header menu={menu} />
+          {children}
+        </ThemeWrapper>
       </body>
     </html>
   );

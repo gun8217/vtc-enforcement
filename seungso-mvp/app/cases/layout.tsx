@@ -1,4 +1,4 @@
-import SessionTimeoutGuard from "@/components/SessionTimeoutGuard";
+import SessionTimeoutGuard from "@/components/auth/SessionTimeoutGuard";
 
 export default function CasesLayout({
   children,
